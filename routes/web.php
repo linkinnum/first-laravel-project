@@ -2,10 +2,20 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     // return view('welcome');
     return 'Hello World from Route';
+}); */
+
+Route::get('contact-us', function () {
+    return view ('contactus');
 });
+
+/* Route::get('products', function () {
+    return view ('products.index');
+}); */
+
+Route::view('products','products.index');
 
 Route::get('about', function () {
     return 'About Nam';
