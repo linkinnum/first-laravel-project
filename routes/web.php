@@ -36,3 +36,7 @@ Route::get('vendor/{id}/{name}', function ($id,$name) {
 Route::get('user/{name?}', function ($name='User 1') {
     return 'User: ' . $name;
 });
+
+Route::fallback(function() {
+    return 'Are you lost?';
+});
