@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>Hello from Views</h1>
+    <h2>{{$product}}</h2>
 </body>
 </html>

@@ -7,7 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-    {{-- <h1>{{$products}} Hello from Abouts</h1> --}}
+    <!-- <h1>Please support US</h1> -->
+
+    {{--sdlkjsdlksd
+    rpofldk;sd
+    cvxkls
+    --}}
+
+    <!-- Test kdfl;ksdh Comment -->
+
+    @php
+      echo "Htllo this is PHP";
+    @endphp
+
+    @for($i=0;$i<10;$i++)
+
+    <p>{{$i}}</p>
+
+    @if($i==3)
+
+      <h1> This is {{$i}} </h1>
+    @endif
+
+    @endfor
+
     @foreach ($products as $product)
         <h1>{{$product}}</h1>
     @endforeach

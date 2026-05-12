@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -20,5 +21,10 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         //
+        // View::share('product','Computer');
+        View::composer('*', function ($view) {
+            $products=['Computer','Laptop','MACbook'];
+            $view->with('products', $products);
+        });
     }
 }
